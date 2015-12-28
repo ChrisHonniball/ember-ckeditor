@@ -13,7 +13,7 @@ export default Ember.Component.extend({
   
   _settings: Ember.computed(
     'extraPlugins',
-    'startUpFocus'
+    'startUpFocus',
   {
     get(){
       let that = this,
