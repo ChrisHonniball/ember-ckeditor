@@ -9,17 +9,17 @@ export default Ember.Component.extend({
   _editor: null,
   
   extraPlugins: '',
-  startUpFocus: false,
+  startupFocus: false,
   
   _settings: Ember.computed(
     'extraPlugins',
-    'startUpFocus',
+    'startupFocus',
   {
     get(){
       let that = this,
         settings = that.getProperties([
           'extraPlugins',
-          'startUpFocus'
+          'startupFocus'
         ]);
       
       return settings;
