@@ -1,6 +1,7 @@
 /* jshint node: true */
 'use strict';
-var Funnel = require('broccoli-funnel');
+var Funnel = require('broccoli-funnel'),
+  path = require('path');
 
 module.exports = {
   name: 'ember-ckeditor',
@@ -9,12 +10,7 @@ module.exports = {
     this._super.included(app);
 
     app.import(app.bowerDirectory + '/ckeditor/ckeditor.js');
-  },
-
-  contentFor: function(type, config) {
-    if (type === 'vendor-prefix') {
-      return "window.CKEDITOR_BASEPATH = '/assets/ckeditor/';";
-    }
+    app.import(path.join('vendor', 'ember-ckeditor.js'), { type: 'vendor', prepend: true });
   },
 
   treeForPublic: function(tree) {

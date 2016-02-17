@@ -1,6 +1,6 @@
 {
   "name": "ember-ckeditor",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Exposes CKEditor via friendly Ember Components",
   "directories": {
     "doc": "doc",
