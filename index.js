@@ -19,7 +19,7 @@ module.exports = {
       destDir: '/assets/ckeditor'
     });
   },
-  
+
   isDevelopingAddon: function() {
     return true;
   }

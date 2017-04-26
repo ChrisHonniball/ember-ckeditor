@@ -36,6 +36,12 @@ export default Ember.Component.extend({
   startupFocus: false,
 
   /**
+   * Class to forward on to the editor
+   * @type {string}
+   */
+  editorClass: '',
+
+  /**
    * Computed property value to prevent a "Backtracking re-render" error in Glimmer 2
    */
   cke_value: Ember.computed({
